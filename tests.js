@@ -15,3 +15,8 @@ test("make sure that hello_jeo return 'Hello, Ntombi' but if the name is jeo or 
 	assert.equal( hello_joe("Joe"), "Hello!");
 	assert.equal( hello_joe("Bob"), "Hello!");
 });
+
+test("make sure it that take number and return a list of number from 1 to n", function(assert) {
+  	assert.deepEqual(number_list(10), [1,2,3,4,5,6,7,8,9,10]);
+});
+
