@@ -25,9 +25,9 @@ test("make sure that it take a number and return a sum of numbers from 1 to n", 
 });
 
 test("make sure that it takes a string parameter and return the length", function(assert) {
-   assert.equal( length("string"), "I love coding");
+   assert.equal( length("I love coding"), 13);
 });
 
-// test("make sure that it takes a string parameter and returns the supplied parameter in hello_uppercase", function(assert) {
-// 	assert.equal( uppercase(), "");
-// });
+test("make sure that it takes a string parameter and returns the supplied parameter in hello_uppercase", function(assert) {
+	assert.equal( uppercase("i have a beautiful sister, beauty"), "I HAVE A BEAUTIFUL SISTER, BEAUTY");
+});
