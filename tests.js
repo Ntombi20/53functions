@@ -33,5 +33,5 @@ test("make sure that it takes a string parameter and returns the supplied parame
 });
 
 test("make sure that it take a string parameter and return the reverse string parameter", function(assert) {
-	assert.equal( reverse("!_ytuaeB ssim I"), "I miss Beauty_!");
+	assert.equal( reverse("I miss Beauty_!"), "!_ytuaeB ssim I");
 });
