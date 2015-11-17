@@ -31,3 +31,7 @@ test("make sure that it takes a string parameter and return the length", functio
 test("make sure that it takes a string parameter and returns the supplied parameter in hello_uppercase", function(assert) {
 	assert.equal( uppercase("i have a beautiful sister, beauty"), "I HAVE A BEAUTIFUL SISTER, BEAUTY");
 });
+
+test("make sure that it take a string parameter and return the reverse string parameter", function(assert) {
+	assert.equal( reverse("!_ytuaeB ssim I"), "I miss Beauty_!");
+});
