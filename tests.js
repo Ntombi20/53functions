@@ -3,7 +3,7 @@ test("make sure that helloWorld return 'hello world'", function(assert) {
 	});
 
 
-test("make sure that hello_uppercase return 'Hello' and the USERNAME", function(assert) {
+test("make sure that hello_uppercase return 'Hello' and the USERNAME in u", function(assert) {
 		assert.equal( hello_uppercase("ntombi20"), "Hello, NTOMBI20");
 		assert.equal( hello_uppercase("andre"), "Hello, ANDRE");
 
@@ -34,4 +34,8 @@ test("make sure that it takes a string parameter and returns the supplied parame
 
 test("make sure that it take a string parameter and return the reverse string parameter", function(assert) {
 	assert.equal( reverse("I miss Beauty_!"), "!_ytuaeB ssim I");
+});
+
+test("make sure that it takes a number parameter and returns a list of 'hello world' entries equal to the number supplied", function(assert) {
+	assert.deepEqual( hello_list(5), ["hello world", "hello world", "hello world", "hello world", "hello world"]);
 });
