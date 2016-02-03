@@ -39,3 +39,8 @@ test("make sure that it take a string parameter and return the reverse string pa
 test("make sure that it takes a number parameter and returns a list of 'hello world' entries equal to the number supplied", function(assert) {
 	assert.deepEqual( hello_list(5), ["hello world", "hello world", "hello world", "hello world", "hello world"]);
 });
+
+test("make sure that it given a list of numbers returns the highest and lowest numbers in the list", function(assert) {
+	assert.deepEqual( high([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]), 25);
+    assert.deepEqual( Low([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]), 1);
+});
