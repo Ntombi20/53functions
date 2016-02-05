@@ -44,3 +44,7 @@ test("make sure that it given a list of numbers returns the highest and lowest n
 	assert.deepEqual( high([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]), 25);
     assert.deepEqual( Low([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]), 1);
 });
+
+test("make sure that it take a sentence as a parameter and return the number of words in the sentence.", function(assert) {
+   assert.equal( count_words("It cost nothing to be nice"), 6);
+});
