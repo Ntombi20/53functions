@@ -48,3 +48,7 @@ test("make sure that it given a list of numbers returns the highest and lowest n
 test("make sure that it take a sentence as a parameter and return the number of words in the sentence.", function(assert) {
    assert.equal( count_words("It cost nothing to be nice"), 6);
 });
+
+test("make sure that it take a sentence as a parameter and returns the sum of the length of words in the sentence", function(assert) {
+	assert.equal( sum_words_len("I feel like coding"), 18);
+});
