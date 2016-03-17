@@ -10,7 +10,6 @@ function longest_word(sentence) {
 			longest = newString[i] + " " + newString[i].length;
 		}
 	
-		console.log(longest + " " + longest.length);
 	}
 	
 			
