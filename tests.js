@@ -52,3 +52,7 @@ test("make sure that it take a sentence as a parameter and return the number of 
 test("make sure that it take a sentence as a parameter and returns the sum of the length of words in the sentence", function(assert) {
 	assert.equal( sum_words_len("I feel like coding"), 18);
 });
+
+test("make sure thst it that a sentence as a parameter and return the longest word and the length of the sentence", function(assert) {
+ 	assert.equal( longest_word("Nomawethu and Ntombi"), 'Nomawethu 9');
+});
