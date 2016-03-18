@@ -1,16 +1,15 @@
-function shortest(sentence) {
+function shortest_word(sentence) {
 	var word = sentence.split(" ");
-
-	var shortest = "";
-
-	for (var i = 0; word.length - 1; i--) {
-		var newString = word[i].split(" ").join(" ").split(" ").slice(",");
-
-		if (newString.length < shortest) {
-			shortest = newString[i] + " " + newString[i].length;
-		}
-	
+	var shortest = "***********************";
+	console.log(word)
+	for (var i = 0; i < word.length; i++) {
+		var newString = word[i];
+		 if (newString.length < shortest.length) {
+		 	shortest = newString;
+		 }
 	}
 			
-	return shortest;	
+	return shortest + " " + shortest.length;	
 };
+
+console.log(shortest_word('Nomawethu Ntombi Nomvula'));

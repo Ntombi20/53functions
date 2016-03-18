@@ -54,9 +54,9 @@ test("make sure that it take a sentence as a parameter and returns the sum of th
 });
 
 test("make sure thst it that a sentence as a parameter and return the longest word and the length of the sentence", function(assert) {
- 	assert.equal( longest_word("Nomawethu and Ntombi"), 'Nomawethu 9');
+ 	assert.equal( longest_word("Nomawethu Ntombi Nomvula"), 'Nomawethu 9');
 });
 
-test("make sure thst it that a sentence as a parameter and return the longest word and the length of the sentence", function(assert) {
- 	assert.equal( longest_word("Nomawethu and Ntombi"), 'and 3');
+test("make sure thst it that a sentence as a parameter and return the shortest word and the length of the sentence", function(assert) {
+ 	assert.equal( shortest_word("Nomawethu Ntombi Nomvula"), 'Ntombi 6');
 });
