@@ -53,10 +53,31 @@ test("make sure that it take a sentence as a parameter and returns the sum of th
 	assert.equal( sum_words_len("I feel like coding"), 18);
 });
 
-test("make sure thst it that a sentence as a parameter and return the longest word and the length of the sentence", function(assert) {
+test("make sure that it take a sentence as a parameter and return the longest word and the length of the sentence", function(assert) {
  	assert.equal( longest_word("Nomawethu Ntombi Nomvula"), 'Nomawethu 9');
 });
 
-test("make sure thst it that a sentence as a parameter and return the shortest word and the length of the sentence", function(assert) {
+test("make sure that it take a sentence as a parameter and return the shortest word and the length of the sentence", function(assert) {
  	assert.equal( shortest_word("Nomawethu Ntombi Nomvula"), 'Ntombi 6');
 });
+
+test("make sure that it takes a sentence as a parameter and return both the average word length rounded up and down", function(assert) {
+ 	assert.equal(word_length("It cost nothing to be nice"), 4);
+});
+
+// test("make sure that it take a sentence as a parameter and return the average word length rounded up", function(assert) {
+//  	assert.equal(average("53 function is the best"), '');
+// });
+
+
+// test("", function(assert) {
+//  	assert.equal(,);
+// });
+
+// test("", function(assert) {
+//  	assert.equal(,);
+// });
+
+// test("", function(assert) {
+//  	assert.equal(,);
+// });
